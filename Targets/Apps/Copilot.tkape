@@ -1,0 +1,21 @@
+Description: Microsoft Copilot artifacts
+Author: Phill Moore
+Version: 1.0
+Id: e295cb09-faef-4ca2-8404-c75b505d4289
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft Copilot Package Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\
+        Recursive: true
+        Comment: "Collects Microsoft Copilot Store app data from the per-user package directory"
+    -
+        Name: Microsoft Copilot AI Host Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\AIHost\
+        Recursive: true
+        Comment: "Collects Windows AI Host data used by the built-in Microsoft Copilot experience"
+
+# Documentation
+# https://support.microsoft.com/en-us/windows/welcome-to-copilot-on-windows-675708af-8c16-4f59-a624-dbf1391f9a0f
