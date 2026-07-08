@@ -45,8 +45,6 @@ Targets:
 # https://jumpdesktop.com/
 # https://changelog.jumpdesktop.com/browser-connections-diagnostic-logs-and-sso-improvements-2YJQxq
 # https://support.jumpdesktop.com/hc/en-us/community/posts/214915623-Activity-Log
-# https://support.jumpdesktop.com/hc/en-us/articles/360049783711-How-do-I-send-logs-from-Jump-Desktop-Connect-
-# https://jumpdesktop.com/support/docs/windows/connect/faq/how-to-find-connect-log-files/
 # Jump Desktop is a remote desktop (RDP/VNC/Fluid) client and server suite. The Windows product line has two components:
 #   * Jump Desktop (Viewer/Client) - stores per-user configuration and a connection database under %AppData%\Jump Desktop and %LocalAppData%\Jump Desktop.
 #   * Jump Desktop Connect (Server/Agent) - runs as a service and stores configuration and diagnostic logs under %ProgramData%\Jump Desktop\Connect (with logs typically in the Logs subfolder, e.g. service.log). Team admins can remotely request these diagnostic logs from the Jump Desktop dashboard on Connect v10 beta 6 and later.
