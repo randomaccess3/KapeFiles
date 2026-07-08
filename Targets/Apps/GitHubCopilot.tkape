@@ -5,6 +5,12 @@ Id: b876fae2-f814-44e7-a2c2-e91235af2290
 RecreateDirectories: true
 Targets:
     -
+        Name: GitHub Copilot Local App Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\github-copilot\
+        Recursive: true
+        Comment: "Collects GitHub Copilot local authentication and application data"
+    -
         Name: GitHub Copilot VS Code Extensions
         Category: Apps
         Path: C:\Users\%user%\.vscode\extensions\github.copilot-*
@@ -19,9 +25,21 @@ Targets:
     -
         Name: GitHub Copilot VS Code Global Storage
         Category: Apps
-        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\github.copilot*
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\GitHub.copilot\
         Recursive: true
-        Comment: "Collects GitHub Copilot data stored in VS Code global storage"
+        Comment: "Collects GitHub Copilot extension data stored in VS Code global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat extension data stored in VS Code global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Workspace Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\workspaceStorage\*\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat workspace-scoped data from VS Code"
     -
         Name: GitHub Copilot VS Code Logs
         Category: Apps
@@ -44,9 +62,21 @@ Targets:
     -
         Name: GitHub Copilot VS Code Insiders Global Storage
         Category: Apps
-        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\globalStorage\github.copilot*
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\globalStorage\GitHub.copilot\
         Recursive: true
-        Comment: "Collects GitHub Copilot data stored in VS Code Insiders global storage"
+        Comment: "Collects GitHub Copilot extension data stored in VS Code Insiders global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Insiders Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\globalStorage\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat extension data stored in VS Code Insiders global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Insiders Workspace Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\workspaceStorage\*\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat workspace-scoped data from VS Code Insiders"
     -
         Name: GitHub Copilot VS Code Insiders Logs
         Category: Apps
@@ -59,3 +89,4 @@ Targets:
 # https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
 # https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat
 # https://code.visualstudio.com/docs/editor/portable
+# https://github.com/Hive-Academy/ptah-extension/blob/main/libs/backend/auth-providers/src/lib/providers/copilot/copilot-file-auth.ts

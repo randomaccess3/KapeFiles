@@ -5,11 +5,18 @@ Id: b2e3beeb-dc5f-41c2-9db0-e23d87557054
 RecreateDirectories: true
 Targets:
     -
-        Name: OpenCode Home Directory
+        Name: OpenCode Installer Fallback Directory
         Category: Apps
         Path: C:\Users\%user%\.opencode\
         Recursive: true
-        Comment: "Collects the verified OpenCode home directory used by the installer fallback and related user data"
+        Comment: "Collects the verified OpenCode installer fallback directory under the user's home directory"
+    -
+        Name: OpenCode Legacy Home Config
+        Category: Apps
+        Path: C:\Users\%user%\
+        FileMask: ".opencode.json"
+        Comment: "Collects the legacy OpenCode home-directory configuration file documented in the archived Go implementation"
 
 # Documentation
 # https://github.com/anomalyco/opencode
+# https://github.com/opencode-ai/opencode/blob/master/internal/config/config.go

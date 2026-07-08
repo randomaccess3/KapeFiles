@@ -13,9 +13,9 @@ Targets:
         Category: Apps
         Path: GitHubCopilot.tkape
     -
-        Name: GitHub Copilot Cowork
+        Name: Copilot Cowork
         Category: Apps
-        Path: GitHubCopilotCowork.tkape
+        Path: CopilotCowork.tkape
     -
         Name: Claude Cowork
         Category: Apps
