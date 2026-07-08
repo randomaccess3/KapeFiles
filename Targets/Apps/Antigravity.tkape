@@ -1,0 +1,40 @@
+Description: Antigravity artifacts
+Author: randomaccess3
+Version: 1.0
+Id: 49f4dc57-3b99-482f-b29f-494a99e87614
+RecreateDirectories: true
+Targets:
+    -
+        Name: Antigravity Roaming Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Antigravity\
+        Recursive: true
+        Comment: "Collects Antigravity roaming-profile data"
+    -
+        Name: Antigravity Google Roaming Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Google\Antigravity\
+        Recursive: true
+        Comment: "Collects Antigravity roaming-profile data from Google-namespaced installs"
+    -
+        Name: Antigravity Local Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Antigravity\
+        Recursive: true
+        Comment: "Collects Antigravity local application data"
+    -
+        Name: Antigravity Google Local Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Google\Antigravity\
+        Recursive: true
+        Comment: "Collects Antigravity local application data from Google-namespaced installs"
+    -
+        Name: Antigravity Legacy Home Directory
+        Category: Apps
+        Path: C:\Users\%user%\.antigravity\
+        Recursive: true
+        Comment: "Collects legacy Antigravity home-directory artifacts"
+
+# Documentation
+# https://github.com/google-antigravity/antigravity-cli
+# https://github.com/safedep/vet/blob/main/pkg/aitool/antigravity.go

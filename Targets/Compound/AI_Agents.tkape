@@ -1,0 +1,49 @@
+Description: AI agent applications
+Author: randomaccess3
+Version: 1.0
+Id: 46479085-6a44-44f5-8fb4-6df4eb540112
+RecreateDirectories: true
+Targets:
+    -
+        Name: GitHub CLI
+        Category: Apps
+        Path: GitHubCLI.tkape
+    -
+        Name: GitHub Copilot
+        Category: Apps
+        Path: GitHubCopilot.tkape
+    -
+        Name: GitHub Copilot Cowork
+        Category: Apps
+        Path: GitHubCopilotCowork.tkape
+    -
+        Name: Claude Cowork
+        Category: Apps
+        Path: ClaudeCowork.tkape
+    -
+        Name: Claude Code
+        Category: Apps
+        Path: ClaudeCode.tkape
+    -
+        Name: OpenCode
+        Category: Apps
+        Path: OpenCode.tkape
+    -
+        Name: Antigravity
+        Category: Apps
+        Path: Antigravity.tkape
+    -
+        Name: Codex
+        Category: Apps
+        Path: Codex.tkape
+    -
+        Name: Gemini CLI
+        Category: Apps
+        Path: GeminiCLI.tkape
+    -
+        Name: Aider
+        Category: Apps
+        Path: Aider.tkape
+
+# Documentation
+# Groups individual AI agent application targets into one collector.

@@ -1,0 +1,34 @@
+Description: Aider artifacts
+Author: randomaccess3
+Version: 1.0
+Id: 66cd8b70-287b-45ac-b623-4121d769893c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Aider Home Directory
+        Category: Apps
+        Path: C:\Users\%user%\.aider\
+        Recursive: true
+        Comment: "Collects Aider analytics, caches, and other home-directory data"
+    -
+        Name: Aider Home Config
+        Category: Apps
+        Path: C:\Users\%user%\
+        FileMask: ".aider.conf.yml"
+        Comment: "Collects the optional Aider configuration file from the user's home directory"
+    -
+        Name: Aider Home Model Settings
+        Category: Apps
+        Path: C:\Users\%user%\
+        FileMask: ".aider.model.settings.yml"
+        Comment: "Collects optional Aider model settings stored in the user's home directory"
+    -
+        Name: Aider Home Model Metadata
+        Category: Apps
+        Path: C:\Users\%user%\
+        FileMask: ".aider.model.metadata.json"
+        Comment: "Collects optional Aider model metadata stored in the user's home directory"
+
+# Documentation
+# https://github.com/Aider-AI/aider
+# https://github.com/Aider-AI/aider/blob/main/aider/website/docs/config/aider_conf.md

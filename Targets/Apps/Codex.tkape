@@ -1,0 +1,17 @@
+Description: OpenAI Codex artifacts
+Author: randomaccess3
+Version: 1.0
+Id: f3a98af7-6a4d-4169-8447-3e9e499dbbc3
+RecreateDirectories: true
+Targets:
+    -
+        Name: Codex Home Directory
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        Recursive: true
+        Comment: "Collects Codex configuration, sessions, and related persisted home-directory artifacts"
+
+# Documentation
+# https://github.com/openai/codex
+# https://github.com/openai/codex/blob/main/docs/config.md
+# https://github.com/openai/codex/blob/main/sdk/typescript/README.md

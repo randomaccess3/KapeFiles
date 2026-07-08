@@ -1,0 +1,28 @@
+Description: Claude Cowork artifacts
+Author: randomaccess3
+Version: 1.0
+Id: 5ecf83b9-60e0-4ec2-85b6-3291bf3d5374
+RecreateDirectories: true
+Targets:
+    -
+        Name: Claude Cowork Store Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\local-agent-mode-sessions\
+        Recursive: true
+        Comment: "Collects Claude Cowork session data from the Microsoft Store package"
+    -
+        Name: Claude Cowork Store Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\
+        Recursive: true
+        Comment: "Collects additional Claude Cowork local data from the Microsoft Store package"
+    -
+        Name: Claude Cowork Roaming Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Claude\
+        Recursive: true
+        Comment: "Collects Claude Cowork data from direct installer deployments"
+
+# Documentation
+# https://support.claude.com/en/articles/14479288-claude-cowork-desktop-architecture-overview
+# https://exchangepedia.com/2026/04/claudetools-claude-desktop-powershell-module.html

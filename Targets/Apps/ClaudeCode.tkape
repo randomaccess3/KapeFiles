@@ -1,0 +1,16 @@
+Description: Claude Code artifacts
+Author: randomaccess3
+Version: 1.0
+Id: 1f0030ea-de0f-4579-8cb4-063e5881a1db
+RecreateDirectories: true
+Targets:
+    -
+        Name: Claude Code Home Directory
+        Category: Apps
+        Path: C:\Users\%user%\.claude\
+        Recursive: true
+        Comment: "Collects Claude Code configuration, projects, skills, and other persisted home-directory artifacts"
+
+# Documentation
+# https://github.com/anthropics/claude-code
+# https://github.com/fien-atone/third-eye/blob/main/DOCS.md

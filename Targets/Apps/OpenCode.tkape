@@ -1,0 +1,15 @@
+Description: OpenCode artifacts
+Author: randomaccess3
+Version: 1.0
+Id: b2e3beeb-dc5f-41c2-9db0-e23d87557054
+RecreateDirectories: true
+Targets:
+    -
+        Name: OpenCode Home Directory
+        Category: Apps
+        Path: C:\Users\%user%\.opencode\
+        Recursive: true
+        Comment: "Collects the verified OpenCode home directory used by the installer fallback and related user data"
+
+# Documentation
+# https://github.com/anomalyco/opencode
