@@ -1,0 +1,28 @@
+Description: Cursor artifacts
+Author: Phill Moore
+Version: 1.0
+Id: caab770f-888a-4509-9302-0b65665110c0
+RecreateDirectories: true
+Targets:
+    -
+        Name: Cursor Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\globalStorage\
+        Recursive: true
+        Comment: "Collects Cursor global storage, including state.vscdb and related chat metadata"
+    -
+        Name: Cursor Workspace Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\workspaceStorage\
+        Recursive: true
+        Comment: "Collects Cursor per-workspace storage where chat history and workspace state are stored"
+    -
+        Name: Cursor Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\logs\
+        Recursive: true
+        Comment: "Collects Cursor application log files"
+
+# Documentation
+# https://forum.cursor.com/t/chat-history-folder/7653
+# https://forum.cursor.com/t/where-are-cursor-chats-stored/77295

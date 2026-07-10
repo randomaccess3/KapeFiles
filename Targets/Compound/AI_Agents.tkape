@@ -13,6 +13,10 @@ Targets:
         Category: Apps
         Path: GitHubCopilot.tkape
     -
+        Name: Cursor
+        Category: Apps
+        Path: Cursor.tkape
+    -
         Name: Microsoft Copilot
         Category: Apps
         Path: Copilot.tkape
