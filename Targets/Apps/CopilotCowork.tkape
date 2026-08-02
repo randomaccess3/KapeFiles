@@ -1,0 +1,16 @@
+Description: Microsoft Copilot Cowork licensed artifacts
+Author: Phill Moore
+Version: 1.0
+Id: 33602e8c-5a8d-4cd8-8fe5-ca621c75be69
+RecreateDirectories: true
+Targets:
+    -
+        Name: Copilot Cowork Skills
+        Category: Apps
+        Path: C:\Users\%user%\OneDrive*\Documents\Cowork\skills\
+        Recursive: true
+        Comment: "Collects licensed Copilot Cowork skill files when they are synced locally through OneDrive"
+
+# Documentation
+# https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/
+# https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq

@@ -1,0 +1,92 @@
+Description: GitHub Copilot artifacts
+Author: Phill Moore
+Version: 1.0
+Id: b876fae2-f814-44e7-a2c2-e91235af2290
+RecreateDirectories: true
+Targets:
+    -
+        Name: GitHub Copilot Local App Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\github-copilot\
+        Recursive: true
+        Comment: "Collects GitHub Copilot local authentication and application data"
+    -
+        Name: GitHub Copilot VS Code Extensions
+        Category: Apps
+        Path: C:\Users\%user%\.vscode\extensions\github.copilot-*
+        Recursive: true
+        Comment: "Collects GitHub Copilot extension files from Visual Studio Code"
+    -
+        Name: GitHub Copilot Chat VS Code Extensions
+        Category: Apps
+        Path: C:\Users\%user%\.vscode\extensions\github.copilot-chat-*
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat extension files from Visual Studio Code"
+    -
+        Name: GitHub Copilot VS Code Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\GitHub.copilot\
+        Recursive: true
+        Comment: "Collects GitHub Copilot extension data stored in VS Code global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat extension data stored in VS Code global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Workspace Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\workspaceStorage\*\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat workspace-scoped data from VS Code"
+    -
+        Name: GitHub Copilot VS Code Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\logs\
+        Recursive: true
+        FileMask: "*copilot*"
+        Comment: "Collects VS Code log files related to GitHub Copilot"
+    -
+        Name: GitHub Copilot VS Code Insiders Extensions
+        Category: Apps
+        Path: C:\Users\%user%\.vscode-insiders\extensions\github.copilot-*
+        Recursive: true
+        Comment: "Collects GitHub Copilot extension files from VS Code Insiders"
+    -
+        Name: GitHub Copilot Chat VS Code Insiders Extensions
+        Category: Apps
+        Path: C:\Users\%user%\.vscode-insiders\extensions\github.copilot-chat-*
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat extension files from VS Code Insiders"
+    -
+        Name: GitHub Copilot VS Code Insiders Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\globalStorage\GitHub.copilot\
+        Recursive: true
+        Comment: "Collects GitHub Copilot extension data stored in VS Code Insiders global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Insiders Global Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\globalStorage\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat extension data stored in VS Code Insiders global storage"
+    -
+        Name: GitHub Copilot Chat VS Code Insiders Workspace Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\User\workspaceStorage\*\GitHub.copilot-chat\
+        Recursive: true
+        Comment: "Collects GitHub Copilot Chat workspace-scoped data from VS Code Insiders"
+    -
+        Name: GitHub Copilot VS Code Insiders Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code - Insiders\logs\
+        Recursive: true
+        FileMask: "*copilot*"
+        Comment: "Collects VS Code Insiders log files related to GitHub Copilot"
+
+# Documentation
+# https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
+# https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat
+# https://code.visualstudio.com/docs/editor/portable
+# https://github.com/Hive-Academy/ptah-extension/blob/main/libs/backend/auth-providers/src/lib/providers/copilot/copilot-file-auth.ts

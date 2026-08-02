@@ -1,0 +1,17 @@
+Description: Gemini CLI artifacts
+Author: Phill Moore
+Version: 1.0
+Id: 74d30134-8b0e-49df-97f1-37b1a6fb8e3f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Gemini CLI Home Directory
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        Recursive: true
+        Comment: "Collects Gemini CLI settings, skills, memories, temporary tracker state, and other persisted home-directory artifacts"
+
+# Documentation
+# https://github.com/google-gemini/gemini-cli
+# https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx
+# https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/skills.md

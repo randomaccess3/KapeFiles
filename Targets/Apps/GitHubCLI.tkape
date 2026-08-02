@@ -1,0 +1,21 @@
+Description: GitHub CLI artifacts
+Author: Phill Moore
+Version: 1.0
+Id: a4d0e0d6-ec9e-4f10-aa7f-a4c58f77872d
+RecreateDirectories: true
+Targets:
+    -
+        Name: GitHub CLI Roaming Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GitHub CLI\
+        Recursive: true
+        Comment: "Collects the default Windows gh configuration and log directory"
+    -
+        Name: GitHub CLI XDG Config
+        Category: Apps
+        Path: C:\Users\%user%\.config\gh\
+        Recursive: true
+        Comment: "Collects the fallback gh configuration directory when XDG-style storage is used"
+
+# Documentation
+# https://cli.github.com/manual/gh_help_environment
