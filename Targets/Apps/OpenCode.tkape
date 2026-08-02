@@ -5,18 +5,31 @@ Id: b2e3beeb-dc5f-41c2-9db0-e23d87557054
 RecreateDirectories: true
 Targets:
     -
-        Name: OpenCode Installer Fallback Directory
+        Name: OpenCode Config Folder
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\
+        Recursive: true
+        Comment: "Collects OpenCode configuration artifacts, including opencode.json and provider or MCP configuration"
+    -
+        Name: OpenCode Data Folder
+        Category: Apps
+        Path: C:\Users\%user%\.local\share\opencode\
+        Recursive: true
+        Comment: "Collects OpenCode cached data, including auth.json and opencode.db session artifacts"
+    -
+        Name: OpenCode Legacy Installer Fallback Directory
         Category: Apps
         Path: C:\Users\%user%\.opencode\
         Recursive: true
-        Comment: "Collects the verified OpenCode installer fallback directory under the user's home directory"
+        Comment: "Collects the older installer fallback directory documented by the archived Go implementation"
     -
         Name: OpenCode Legacy Home Config
         Category: Apps
         Path: C:\Users\%user%\
         FileMask: ".opencode.json"
-        Comment: "Collects the legacy OpenCode home-directory configuration file documented in the archived Go implementation"
+        Comment: "Collects the legacy home-directory configuration file documented by the archived Go implementation"
 
 # Documentation
+# https://www.intrinsec.com/opencode-forensics/
 # https://github.com/anomalyco/opencode
 # https://github.com/opencode-ai/opencode/blob/master/internal/config/config.go

@@ -12,6 +12,7 @@ Targets:
         Comment: "Collects Codex configuration, sessions, and related persisted home-directory artifacts"
 
 # Documentation
+# https://www.intrinsec.com/ai-agents-digital-forensics-openai-codex-artifacts/
 # https://github.com/openai/codex
 # https://github.com/openai/codex/blob/main/docs/config.md
 # https://github.com/openai/codex/blob/main/sdk/typescript/README.md
